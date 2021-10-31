@@ -109,13 +109,13 @@ async def start(bot, message):
             )
         )
     else:
-        await message.reply_photo(photo=START_IMG, caption=START_MSG.format(message.from_user.mention),
+        await message.reply_photo((random.choice(["https://telegra.ph/file/46a9e3c6ed85f97ae9c42.jpg", "https://telegra.ph/file/352e002346452f0c15869.jpg"])), caption=START_MSG.format(message.from_user.mention),
             reply_markup=InlineKeyboardMarkup(
                 [[
                 InlineKeyboardButton("📺 𝗦𝗘𝗔𝗥𝗖𝗛 𝗛𝗘𝗥𝗘 🔍", switch_inline_query_current_chat='')
                 ],[
-                InlineKeyboardButton("📥 𝗠𝗢𝗩𝗜𝗘𝗦 📥", url='https://t.me/malayalammoviesmms'),
-                InlineKeyboardButton("💌 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗕𝗘 💌", url='https://youtu.be/2tek7Y5CEF4'),
+                InlineKeyboardButton("📥 𝗠𝗢𝗩𝗜𝗘𝗦 📥", url='https://t.me/joinchat/FYBCIcMfr0AyOTFl'),
+                InlineKeyboardButton("💌 𝗦𝗨𝗕𝗦𝗖𝗥𝗜𝗕𝗘 💌", url='https://t.me/universalmovieE'),
                 ]]
             )
         )
